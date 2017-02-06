@@ -119,8 +119,8 @@ spec/support/m2bf_xquery_helpers.rb is an exemplar.
 
 In your converter project, create a .gitmodules file with the following:
 ```
-[submodule marc_to_bibframe_validation]
-  path = marc_to_bibframe_validation
+[submodule marc-to-bibframe-validation]
+  path = marc-to-bibframe-validation
   url = https://github.com/ld4l-labs/marc-to-bibframe-validation.git
 ```
 Then create a soft link in the `fixtures` folder to the sample data in the converter project. For example, if the converter keeps sample data under `{repos}/doc/sample-conversions` in this repos do:
