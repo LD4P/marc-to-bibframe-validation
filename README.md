@@ -115,6 +115,20 @@ The specific marc records were chosen to try to exercise different wrinkles in w
 
 spec/support/m2bf_xquery_helpers.rb is an exemplar.
 
+# Importing Marc-To-Bibframe-Validation as a Converter Module
+
+In your converter project, create a .gitmodules file with the following:
+```
+[submodule marc_to_bibframe_validation]
+  path = marc_to_bibframe_validation
+  url = https://github.com/ld4l-labs/marc-to-bibframe-validation.git
+```
+Then create a soft link in the `fixtures` folder to the sample data in the converter project. For example, if the converter keeps sample data under `{repos}/doc/sample-conversions` in this repos do:
+```
+cd spec/fixtures
+ln -s ../../../doc/sample-conversions/ sample-conversions
+```
+
 # Contributing
 
 1. Fork the repository.
