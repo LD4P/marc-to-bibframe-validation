@@ -13,13 +13,15 @@
 # information for the helper method that will be used. See README for more
 # information.
 
-helper_method: marc_to_graph_m2bf_xquery
+helper_method: marc_to_graph_bib2lod
+
+# Setting for callung the bib2lod converter
+bib2lod_path:
 
 # Settings for marc2bibframe LoC xquery converter
-#   see spec/support/m2bf_xquery_helpers.rb
-# location of clone repo from git@github.com:lcnetdev/marc2bibframe.git
-marc2bibframe_path: /path/to/marc2bibframe
-# location of saxon jar
-saxon_jar_path: /path/to/saxon.jar
+#   see spec/support/m2bf_bib2lod_helpers.rb
+# location of clone repo from https://github.com/ld4l-labs/bib2lod
+marc2bibframe_path: /Users/jgreben/Projects/bib2lod/target
+
 # base URI to use for fake urls created
-base_uri: http://example.org/
+# base_uri: http://ld4p.library.org/
