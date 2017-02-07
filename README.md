@@ -1,11 +1,14 @@
-[![Dependency Status](https://gemnasium.com/sul-dlss/bibframe-work-validation.svg)](https://gemnasium.com/sul-dlss/bibframe-work-validation)
-[![Dependency Status](https://gemnasium.com/sul-dlss/marc-to-bibframe-validation.svg)](https://gemnasium.com/sul-dlss/marc-to-bibframe-validation)
+[![Dependency Status](https://gemnasium.com/ld4l-labs/marc-to-bibframe-validation.svg)](https://gemnasium.com/ld4l-labs/marc-to-bibframe-validation)
 
 # Marc to Bibframe Validation
 
-This project is focused on validating particulars of bibframe graphs produced from MARC data.  Ruby RSpec is used as a means of validating the properties of data in the Bibframe model.  We want evaluation code that can be run against bibframe resources to determine the quality of the conversion process.
+This project is focused on validating the particulars of bibframe graphs produced from MARC data. Ruby RSpec is used as a means of validating the properties of data in the Bibframe model. We want evaluation code that can be run against bibframe resources to determine the quality of a conversion process.
 
-This project should help us evaluate the quality of bibframe produced by different converters. https://github.com/lcnetdev/marc2bibframe is the current reference implementation, but we expect other converters will appear.  This project provides a framework for calling external converter code to convert a single MARC record to an RDF::Graph object; the framework then provides tests for evaluating the resulting graph.
+This project should help us evaluate the quality of bibframe produced by different converters. This project provides a framework for calling external converter code to convert a single MARC record to an RDF::Graph object; the framework then provides tests for evaluating the resulting graph.
+
+# Bib2LOD Conversion
+
+This fork of the Marc to Bibframe validation project is focused on the use of the Bib2LOD converter being developed as part of the LD4L-Labs organization. The Bib2LOD code base is available at https://github.com/ld4l-labs/bib2lod.
 
 # Approach
 
